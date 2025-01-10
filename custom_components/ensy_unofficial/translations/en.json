@@ -1,0 +1,26 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ensy Ventilation Aggregate (unofficial)",
+        "data": {
+          "mac": "MAC address",
+          "name": "Name",
+          "tls_insecure": "Disable TLS verification"
+        }
+      },
+      "reconfigure": {
+        "title": "Ensy Ventilation Aggregate (unofficial)",
+        "data": {
+          "mac": "MAC address",
+          "name": "Name",
+          "tls_insecure": "Disable TLS verification"
+        }
+      }
+    },
+    "abort": {
+      "cannot_connect": "Cannot connect to Ensy and validate the provided MAC address",
+      "already_configured": "Provided MAC address is already configured"
+    }
+  }
+}
