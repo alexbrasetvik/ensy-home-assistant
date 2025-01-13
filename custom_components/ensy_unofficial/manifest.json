@@ -1,10 +1,8 @@
 {
   "domain": "ensy_unofficial",
   "name": "Ensy Ventilation Aggregate (unofficial)",
-  "version": "0.0.1a1",
-  "codeowners": [
-    "@alexbrasetvik"
-  ],
+  "version": "0.0.1",
+  "codeowners": ["@alexbrasetvik"],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/alexbrasetvik/ensy-home-assistant/",
