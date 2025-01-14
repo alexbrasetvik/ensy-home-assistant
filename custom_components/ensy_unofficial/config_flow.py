@@ -87,7 +87,9 @@ class EnsyConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         if user_input is not None:
             mac = user_input[CONF_MAC]
             if mac != data[CONF_MAC]:
-                if not await self.__test_connectivity(mac):
+                if not await EnsyClient.test_connectivity(
+                    self.hass, mac, user_input.get(CONF_TLS_INSECURE, False)
+                ):
                     return self.async_abort(reason="cannot_connect")  # type: ignore
 
             return self.async_update_reload_and_abort(
