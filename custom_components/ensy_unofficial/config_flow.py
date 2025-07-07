@@ -1,5 +1,10 @@
 import logging
 
+import voluptuous as vol
+from homeassistant import config_entries
+from homeassistant.helpers.device_registry import format_mac
+from homeassistant.helpers.service_info import dhcp
+
 from custom_components.ensy_unofficial.client import EnsyClient
 from custom_components.ensy_unofficial.const import (
     CONF_MAC,
@@ -9,11 +14,6 @@ from custom_components.ensy_unofficial.const import (
     DEFAULT_NAME,
     DOMAIN,
 )
-import voluptuous as vol
-
-from homeassistant import config_entries
-from homeassistant.components import dhcp
-from homeassistant.helpers.device_registry import format_mac
 
 _LOGGER = logging.getLogger(__name__)
 
